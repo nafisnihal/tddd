@@ -1,0 +1,104 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Buy groceries",
+      "completed": true
+    },
+    {
+      "id": "2",
+      "title": "Walk the dog 1",
+      "completed": true
+    },
+    {
+      "id": "3",
+      "title": "Read a book",
+      "completed": true
+    },
+    {
+      "id": "5",
+      "title": "Call mom",
+      "completed": true
+    },
+    {
+      "id": "6",
+      "title": "Clean room",
+      "completed": true
+    },
+    {
+      "id": "7",
+      "title": "Pay bills",
+      "completed": false
+    },
+    {
+      "id": "8",
+      "title": "Exercise",
+      "completed": true
+    },
+    {
+      "id": "9",
+      "title": "Cook dinner",
+      "completed": false
+    },
+    {
+      "id": "10",
+      "title": "Plan trip",
+      "completed": false
+    },
+    {
+      "id": "11",
+      "title": "Finish homework",
+      "completed": false
+    },
+    {
+      "id": "12",
+      "title": "Attend meeting",
+      "completed": true
+    },
+    {
+      "id": "13",
+      "title": "Water plants",
+      "completed": false
+    },
+    {
+      "id": "14",
+      "title": "Reply to emails",
+      "completed": false
+    },
+    {
+      "id": "15",
+      "title": "Update resume",
+      "completed": false
+    },
+    {
+      "id": "16",
+      "title": "Book flight tickets",
+      "completed": false
+    },
+    {
+      "id": "17",
+      "title": "Visit the dentist",
+      "completed": true
+    },
+    {
+      "id": "18",
+      "title": "Organize files",
+      "completed": false
+    },
+    {
+      "id": "19",
+      "title": "Backup photos",
+      "completed": false
+    },
+    {
+      "id": "20",
+      "title": "Renew subscription",
+      "completed": false
+    },
+    {
+      "id": "7234",
+      "title": "hello",
+      "completed": false
+    }
+  ]
+}
