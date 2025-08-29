@@ -158,15 +158,6 @@ export default function DummyJsonTodos() {
 // UI components automatically get the loading prop
 ```
 
-## 🔄 Migration Path for JsonServerTodos
-
-The same refactoring pattern can be applied to the JsonServerTodos component:
-
-1. Create `lib/jsonserver-api.js`
-2. Create `hooks/useJsonServerTodos.js`
-3. Reuse the same UI components
-4. 95% code sharing between both approaches!
-
 ## 🎉 Summary
 
 - **90% reduction** in main component size
@@ -175,5 +166,6 @@ The same refactoring pattern can be applied to the JsonServerTodos component:
 - **Better testing** capabilities
 - **Enhanced reusability** across the project
 - **Cleaner code** that's easier to understand and modify
+- **Local storage persistence** for data that survives page refreshes
 
 The refactored code follows React best practices and modern development patterns, making it much more professional and maintainable.

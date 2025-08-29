@@ -10,7 +10,7 @@
 
 I've implemented a **Local Storage + DummyJSON Hybrid** system that:
 
-1. **Fetches initial data** from DummyJSON 
+1. **Fetches initial data** from DummyJSON
 2. **Stores all changes locally** in browser localStorage
 3. **Applies local changes** to fetched data on every load
 4. **Persists across page refreshes** and browser sessions
@@ -18,12 +18,14 @@ I've implemented a **Local Storage + DummyJSON Hybrid** system that:
 ## 🏗️ **Technical Implementation**
 
 ### **New File: `lib/local-storage.js`**
+
 - Manages localStorage for todo changes
 - Handles create, update, delete operations locally
 - Applies local changes to fetched DummyJSON data
 - Uses negative IDs for locally created todos to avoid conflicts
 
 ### **Updated: `lib/dummyjson-api.js`**
+
 ```javascript
 // Before: Real API calls that don't persist
 export async function updateTodo(id, updates) {
@@ -39,6 +41,7 @@ export async function updateTodo(id, updates) {
 ```
 
 ### **Enhanced: `hooks/useTodos.js`**
+
 - Added `resetLocalChanges()` function
 - Automatic application of local changes on data fetch
 - Seamless integration with existing state management
@@ -46,11 +49,13 @@ export async function updateTodo(id, updates) {
 ## 🎯 **How It Works**
 
 ### **Data Flow:**
+
 1. **Page Load**: Fetch todos from DummyJSON → Apply local changes → Display
 2. **User Action**: Update local state → Save to localStorage → Update UI
 3. **Page Refresh**: Fetch todos from DummyJSON → Apply saved local changes → Display
 
 ### **Local Storage Structure:**
+
 ```javascript
 {
   "1": { "completed": true },           // Todo #1 marked complete
@@ -68,17 +73,20 @@ export async function updateTodo(id, updates) {
 ## 🚀 **Features Added**
 
 ### **1. Persistence Across Refreshes**
+
 - ✅ Completed todos stay completed
 - ✅ Edited text persists
 - ✅ Deleted todos stay deleted
 - ✅ New todos persist
 
 ### **2. Reset Functionality**
+
 - Red "Reset Data" button to clear all local changes
 - Confirmation dialog to prevent accidental resets
 - Reloads original DummyJSON data
 
 ### **3. Visual Indicators**
+
 - Updated header: "DummyJSON + Local Storage (Hybrid)"
 - Note: "Changes persist locally across page refreshes!"
 - Local storage info panel
@@ -91,6 +99,7 @@ export async function updateTodo(id, updates) {
 4. **Verify**: Todo remains completed! 🎉
 
 ### **Test All Operations:**
+
 - ✅ **Create**: Add new todo → Refresh → Still there
 - ✅ **Update**: Edit todo text → Refresh → Changes saved
 - ✅ **Complete**: Mark complete → Refresh → Still completed
@@ -99,6 +108,7 @@ export async function updateTodo(id, updates) {
 ## 💡 **Benefits of This Approach**
 
 ### **✅ Pros:**
+
 - **Real persistence** without needing a backend server
 - **Best of both worlds**: DummyJSON data + local persistence
 - **No setup required** - works immediately
@@ -106,6 +116,7 @@ export async function updateTodo(id, updates) {
 - **Reset capability** - can clear all changes
 
 ### **⚠️ Limitations:**
+
 - **Browser-specific**: Changes only persist in the same browser
 - **Storage limits**: Limited by localStorage size (typically 5-10MB)
 - **Single device**: Changes don't sync across devices
@@ -115,6 +126,7 @@ export async function updateTodo(id, updates) {
 **Problem SOLVED!** 🚀
 
 Your todos now:
+
 - ✅ **Persist completion status** across page refreshes
 - ✅ **Save all changes** locally
 - ✅ **Work immediately** without server setup

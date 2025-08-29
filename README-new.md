@@ -15,11 +15,13 @@ This is a modern, minimal todo application built with Next.js 15 and dark theme 
 ## Getting Started
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Start the app:**
+
    ```bash
    npm run dev
    ```
@@ -30,8 +32,9 @@ This is a modern, minimal todo application built with Next.js 15 and dark theme 
 ## How It Works
 
 ### **Hybrid DummyJSON + Local Storage Approach**
+
 - **Initial Data**: Fetched from DummyJSON API for realistic learning
-- **Changes Persistence**: All modifications saved to browser localStorage  
+- **Changes Persistence**: All modifications saved to browser localStorage
 - **Page Refresh**: Your changes persist across browser sessions!
 - **No Setup Required**: Works immediately without any backend configuration
 
@@ -73,18 +76,22 @@ This is a modern, minimal todo application built with Next.js 15 and dark theme 
 ## Key Features Explained
 
 ### **Data Persistence**
+
 Your todos persist across page refreshes and browser sessions using a hybrid approach:
+
 - Initial data comes from DummyJSON (30 realistic todos)
 - All your changes are saved locally in browser storage
 - Changes are automatically applied when you reload the page
 
 ### **Modern Architecture**
+
 - **Component-based**: Each UI piece is a reusable component
 - **Custom Hooks**: State management separated from UI
 - **Utility Libraries**: Pure functions for business logic
 - **Separation of Concerns**: Clean, maintainable code structure
 
 ### **Dark Theme**
+
 - Background: `bg-gray-900`
 - Cards: `bg-gray-800` with `border-gray-700`
 - Inputs: `bg-gray-700` with `border-gray-600`
@@ -95,6 +102,7 @@ Your todos persist across page refreshes and browser sessions using a hybrid app
 ## API Integration Learning
 
 This project demonstrates modern API integration patterns:
+
 - **HTTP Methods**: GET, POST, PUT, DELETE
 - **Pagination**: Using limit/skip parameters
 - **State Management**: Optimistic updates with error handling
@@ -104,6 +112,7 @@ This project demonstrates modern API integration patterns:
 ## Reset Functionality
 
 Use the "Reset Data" button to:
+
 - Clear all local changes
 - Reload original DummyJSON data
 - Test the app with fresh data
@@ -112,6 +121,7 @@ Use the "Reset Data" button to:
 ## Contributing
 
 This project showcases modern React development practices including:
+
 - Functional components with hooks
 - Custom hooks for business logic
 - Component composition
